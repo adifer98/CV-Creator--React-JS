@@ -1,0 +1,148 @@
+
+
+.CV-layout {
+  position: relative;
+  top: 100px;
+  height: calc(100vh - 100px);
+  width: 100vw;
+  background: lightblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.CV-display {
+  aspect-ratio: 1 / 1.414;
+  height: 100%;
+  max-height: 100%;
+  max-width: calc(100vh * 0.707);
+  background: white;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  box-sizing: border-box;
+  overflow: auto;
+  border-radius: 4px;
+}
+
+
+
+.general-info {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.full-name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #234057;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.contact-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 0.75rem;
+  color: #555;
+}
+
+.separator {
+  color: #66a3ca;
+  font-weight: bold;
+}
+
+.divider {
+  height: 2px;
+  background-color: #66a3ca;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+
+.section-title {
+  color: #234057;
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-bottom: 1px solid #234057;
+  padding-bottom: 0.5rem;
+}
+
+/* Entry Styling */
+.entry {
+  margin-top: 1rem;
+  border-bottom: 1px solid #ccc;
+}
+
+.entry:last-of-type {
+  border-bottom: none;
+}
+
+.entry-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 0.3rem;
+}
+
+.institution,
+.company {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #333;
+  margin: 0;
+}
+
+.dates {
+  font-size: 0.7rem;
+  color: #555;
+  font-style: italic;
+}
+
+.degree,
+.position {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #444;
+  margin-bottom: 0.3rem;
+}
+
+
+
+.education-info,
+.work-info {
+  margin-bottom: 2rem;
+}
+
+
+@media screen {
+  .CV-display {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    border-radius: 6px;
+  }
+}
+
+@media print {
+  .CV-display {
+    width: 210mm;
+    min-height: 297mm;
+    box-shadow: none;
+    padding: 25mm;
+    border-radius: 0;
+    overflow: visible;
+  }
+}
