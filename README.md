@@ -1,6 +1,6 @@
 # 🧾 CV Creator
 
-A sleek and easy-to-use CV builder built with **React JS + Vite**.  
+A simple and easy-to-use CV builder built with **React JS + Vite**.  
 Users can complete a form with their general information, education, and work experience. Generate a clean, professional CV.
 
 ---
